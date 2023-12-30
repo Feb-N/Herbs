@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: Arial;
+            padding-top: 20px;
+        }
+
+        .box {
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+        .top-auto{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .auto {
+            margin: 0 auto;
+            width: 60%;
+
+        }
+        /* header{
+            background-color: #cd9d75;
+        } */
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .left {
+            width: 60%;
+        }
+
+        .right-logo {
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .right-logo img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        video {
+            width: 100%;
+        }
+        footer{
+            padding-left: 40px;
+            padding-top: 20px;
+        }
+		.cebian{
+			width: 100px;
+			height: 300px;
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			background-color: black;
+		}
+		.cebian ul{
+			width: 100px;
+			height: 300px;
+		}
+		.cebian ul li{
+			width: 100px;
+			height: 100px;
+			list-style-type: none;
+			text-align: center;
+			line-height: 100px;
+		}
+		.cebian ul li a{
+			text-decoration: none;
+			color: white;
+			font-size: 10px;
+		}
+		.cebian ul li:hover{
+			background-color: gray;
+		}
+		
+    </style>
+</head>
+
+<body>
+	<div class="cebian">
+	    <ul>
+	        <li><a href="index.html" style="font-size: 10px;">home</a></li>
+	        <li><a href="angelica.html" style="font-size: 10px;">angelica</a></li>
+	        <li><a href="prunellavulgraris.html" style="font-size: 10px;">prunellavulgraris</a></li>
+	    </ul>
+	</div>
+    <div class="box ">
+        <h1 class="top-auto">
+            Angelica
+        </h1>
+        <header >
+            <div class="top-auto top">
+                <div class="left">
+                    Angelica sinensis is a perennial herb belonging to the umbrella family. It tastes sweet, spicy and warm.
+                    It belongs to the liver, heart and spleen. It has a long history of naturalization, which has been
+                    recorded in China's first pharmaceutical monograph, Shennong Herbal Classic. Most of the traditional
+                    Chinese medicine prescriptions are inseparable from Angelica, so there is a saying of "ten prescriptions
+                    and nine returns". Angelica has the ability to regulate blood and replenish blood. It has always been
+                    regarded as the first medicine in gynecology, known as "the holy medicine in blood"
+                </div>
+                <div class="right-logo" onclick="changeTextColor()">
+                    <img src="image/logo.png" alt="">
+                </div>
+            </div>
+        </header>
+        <div class="auto">
+            <video width="100%"  controls autoplay>
+                <source src="./Video/Video of Angelica interactive installation.mp4" type="video/mp4">
+            </video>
+        </div>
+        <footer class="top-auto">
+            Zinuo, Angelica,2023
+        </footer>
+    </div>
+    <script>
+        function changeTextColor() {
+            // 获取一个随机颜色
+            const randomColor = getRandomColor();
+
+            // 将颜色应用于页面文字
+            document.body.style.color = randomColor;
+        }
+
+        function getRandomColor() {
+            // 生成一个随机的十六进制颜色代码
+            return '#' + Math.floor(Math.random()*16777215).toString(16);
+        }
+    </script>
+</body>
+
+</html>
